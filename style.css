@@ -13,14 +13,15 @@ Header Styling
 
 .logo {
     color: white;
-    font-size: 150%;
-    flex-grow: 2;
-    margin: 0;
-    padding-left: 5%;
+    font-size: 170%;
+    padding-left: 30%;
+    padding-top: 7%;
+    font-family: Open Sans;
 }
 
 .logo-icon {
-    padding-top: 2%;
+    padding-left: 15%;
+    padding-top: 7%;
     height: 100%;
     width: auto;
 }
