@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+
 
 
     <title>CAML</title>
@@ -16,7 +18,7 @@
 </head>
 <body>
 
-    <div class="row">
+    <div class="row" title="header">
         <div class="col-md-3 form-inline" style="background-color:#005eb7;">
             <div class="media">
                     <div class="media-left media-middle">
@@ -43,9 +45,21 @@
                 </div>
             </div>
         </div>
-
     </div>
 
+    <div class="flex-column column" id="nav-content">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-book-open"></span><span> C</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-users"></span><span> M</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-lightbulb"></span><span> I</span></a>
+            </li>
+        </ul>
+    </div>
 
 </body>
 </html>
