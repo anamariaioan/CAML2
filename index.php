@@ -57,7 +57,7 @@
 
     <div class="main-page">
         <div class="col">
-            <div class="collapsing.show multi-collapse" id="collapseCourses">
+            <div class="collapsing multi-collapse" id="collapseCourses">
                 <div class="card card-body">
                     Course 1
                 </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="collapse.show multi-collapse" id="collapseMeetings">
+            <div class="collapse multi-collapse" id="collapseMeetings">
                 <div class="card card-body">
                     Meeting 1
                 </div>
