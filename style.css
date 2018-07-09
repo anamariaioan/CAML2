@@ -2,7 +2,7 @@
 Header Styling
 *******************************/
 
-.header {
+.hider {
     padding: 10px 0;
     margin: 0 auto;
     background-color: #005eb7;
@@ -11,18 +11,62 @@ Header Styling
     display: flex;
 }
 
-.logo {
+.lgo {
     color: white;
     font-size: 170%;
     padding-left: 30%;
     padding-top: 7%;
-    font-family: Open Sans;
+    font-family: Open Sans !important;
 }
 
-.logo-icon {
+.lgo-icon {
     padding-left: 15%;
     padding-top: 7%;
     height: 100%;
     width: auto;
 }
 
+/******************************
+Sidebar Styling
+*******************************/
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: -1;
+    top: 3%;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 115%;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #787878;
+    text-decoration: none;
+}
+
+.main-page {
+    margin-left: 17%;
+    top: 10%;
+    position: fixed;
+
+}
+
+.sidenav ul {
+    list-style-type: none;
+    display: block;
+}
+
+.sidenav li {
+    width: 100%;
+}

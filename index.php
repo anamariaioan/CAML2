@@ -18,14 +18,14 @@
 </head>
 <body>
 
-    <div class="row" title="header">
+    <div class="row">
         <div class="col-md-3 form-inline" style="background-color:#005eb7;">
             <div class="media">
                     <div class="media-left media-middle">
-                        <div><a href="index.php"><img class="logo-icon" src="imgs/logo.png"></a></div>
+                        <div><a href="index.php"><img class="lgo-icon" src="imgs/logo.png"></a></div>
                     </div>
                     <div class="media-body">
-                        <h1 class="logo">CAML</h1>
+                        <h1 class="lgo">CAML</h1>
                     </div>
             </div>
         </div>
@@ -47,18 +47,16 @@
         </div>
     </div>
 
-    <div class="flex-column column" id="nav-content">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-book-open"></span><span> C</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-users"></span><span> M</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #000;"><span class="fas fa-lightbulb"></span><span> I</span></a>
-            </li>
+    <div class="sidenav">
+        <ul>
+            <li><a href="#"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
+            <li><a href="#"><span class="fas fa-users"></span><span> Meetings</span></a></li>
+            <li><a href="#"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
         </ul>
+    </div>
+
+    <div class="main-page">
+        ...
     </div>
 
 </body>
