@@ -41,23 +41,23 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Ideas</a>
                     <a class="dropdown-item" href="#">Log out</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="sidenav">
-        <ul>
-            <li><a href="#collapseCourses" data-toggle="collapse" aria-expanded="true" aria-controls="collapseCourses"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
-            <li><a href="#collapseMeetings" data-toggle="collapse" aria-expanded="true" aria-controls="collapseMeetings"><span class="fas fa-users"></span><span> Meetings</span></a></li>
-            <li><a href="#"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
-        </ul>
-    </div>
-
-    <div class="main-page">
-        <div class="col">
-            <div class="collapsing multi-collapse" id="collapseCourses">
+    <div id="accordions">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="fas fa-book-open"></span> Courses
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
                 <div class="card card-body">
                     Course 1
                 </div>
@@ -66,8 +66,15 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="collapseMeetings">
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <span class="fas fa-users"></span><span> Meetings
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
                 <div class="card card-body">
                     Meeting 1
                 </div>
@@ -76,7 +83,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 </body>
