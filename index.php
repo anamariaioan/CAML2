@@ -49,14 +49,34 @@
 
     <div class="sidenav">
         <ul>
-            <li><a href="#"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
-            <li><a href="#"><span class="fas fa-users"></span><span> Meetings</span></a></li>
+            <li><a href="#collapseCourses" data-toggle="collapse" aria-expanded="true" aria-controls="collapseCourses"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
+            <li><a href="#collapseMeetings" data-toggle="collapse" aria-expanded="true" aria-controls="collapseMeetings"><span class="fas fa-users"></span><span> Meetings</span></a></li>
             <li><a href="#"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
         </ul>
     </div>
 
     <div class="main-page">
-        ...
+        <div class="col">
+            <div class="collapsing.show multi-collapse" id="collapseCourses">
+                <div class="card card-body">
+                    Course 1
+                </div>
+                <div class="card card-body">
+                    Course 2
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse.show multi-collapse" id="collapseMeetings">
+                <div class="card card-body">
+                    Meeting 1
+                </div>
+                <div class="card card-body">
+                    Meeting 2
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
