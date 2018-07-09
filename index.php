@@ -83,6 +83,23 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <span class="fas fa-lightbulb"></span><span> Ideas
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
+                <div class="card card-body">
+                    Idea 1
+                </div>
+                <div class="card card-body">
+                    Idea 2
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
