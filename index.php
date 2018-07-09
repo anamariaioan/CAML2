@@ -18,7 +18,9 @@
 </head>
 <body>
 
-    <div class="row">
+<!--Header-->
+    <div class="row" rel="header">
+        <!-- eMAG icon + title-->
         <div class="col-md-3 form-inline" style="background-color:#005eb7;">
             <div class="media">
                     <div class="media-left media-middle">
@@ -29,10 +31,10 @@
                     </div>
             </div>
         </div>
-
+        <!--blue blank-->
         <div class="col-md-6" style="background-color:#005eb7;">
         </div>
-
+        <!--My account-->
         <div class="col-md-3 row form-inline" style="background-color:#005eb7;">
             <div class="dropdown" style="margin-left: 60%">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,8 +49,9 @@
             </div>
         </div>
     </div>
-
+<!--body-->
     <div id="accordions">
+        <!--Courses-->
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -59,13 +62,26 @@
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
                 <div class="card card-body">
-                    Course 1
+                    <h5 class="card-title">Course 1</h5>
+                    <div class="card-text">
+                        Course 1 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card-body">
-                    Course 2
+                    <h5 class="card-title">Course 2</h5>
+                    <div class="card-text">
+                        Course 2 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--Meetings-->
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
@@ -76,13 +92,26 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
                 <div class="card card-body">
-                    Meeting 1
+                    <h5 class="card-title">Meeting 1</h5>
+                    <div class="card-text">
+                        Meeting 1 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card card-body">
-                    Meeting 2
+                    <h5 class="card-title">Meeting 2</h5>
+                    <div class="card-text">
+                        Meeting 2 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--Ideas-->
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
@@ -93,10 +122,22 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
                 <div class="card card-body">
-                    Idea 1
+                <h5 class="card-title">Idea 1</h5>
+                <div class="card-text">
+                    Idea 1 description
+                    <div>
+                        <a href="#" class="btn btn-primary">Apply</a>
+                    </div>
+                </div>
                 </div>
                 <div class="card card-body">
-                    Idea 2
+                <h5 class="card-title">Idea 2</h5>
+                <div class="card-text">
+                    Idea 2 description
+                    <div>
+                        <a href="#" class="btn btn-primary">Apply</a>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
