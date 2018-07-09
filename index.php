@@ -50,8 +50,10 @@
     <div class="sidenav">
         <ul>
             <li><a href="#collapseCourses" data-toggle="collapse" aria-expanded="true" aria-controls="collapseCourses"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
-            <li><a href="#collapseMeetings" data-toggle="collapse" aria-expanded="true" aria-controls="collapseMeetings"><span class="fas fa-users"></span><span> Meetings</span></a></li>
-            <li><a href="#"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
+            <li><a href="#collapseMeetings" data-toggle="collapse" aria-expanded="false" aria-controls="collapseMeetings"><span class="fas fa-users"></span><span> Meetings</span></a></li>
+            <li><a href="#collapseIdeas" data-toggle="collapse" aria-expanded="false" aria-controls="collapseIdeas"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
+            <li></br></br></br></br></br></br></br></br></li>
+            <li><button class="btn btn-outline-info btn-sm" data-target=".multi-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCourses collapseMeetings collapseIdeas"><span class=""></span><span> Show All/Hide All</span></button></li>
         </ul>
     </div>
 
@@ -59,20 +61,54 @@
         <div class="col">
             <div class="collapsing.show multi-collapse" id="collapseCourses">
                 <div class="card card-body">
-                    Course 1
+                        <h5 class="card-title">Course 1</h5>
+                    <div class="card-text">
+                        Course 1 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
                 <div class="card card-body">
-                    Course 2
+                    <h5 class="card-title">Course 2</h5>
+                    <div class="card-text">
+                        Course 2 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="collapse.show multi-collapse" id="collapseMeetings">
                 <div class="card card-body">
-                    Meeting 1
+                    <h5 class="card-title">Meeting 1</h5>
+                    <div class="card-text">
+                        Meeting 1 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
                 <div class="card card-body">
-                    Meeting 2
+                    <h5 class="card-title">Meeting 2</h5>
+                    <div class="card-text">
+                        Meeting 2 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse.show multi-collapse" id="collapseIdeas">
+                <div class="card card-body">
+                    <h5 class="card-title">Idea 1</h5>
+                    <div class="card-text">
+                        Idea 1 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+                <div class="card card-body">
+                    <h5 class="card-title">Idea 2</h5>
+                    <div class="card-text">
+                        Idea 2 description
+                    </div>
+                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
             </div>
         </div>
