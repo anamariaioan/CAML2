@@ -19,7 +19,7 @@
 <body>
 
 <!--Header-->
-    <div class="row" rel="header">
+    <div class="row fixed-top" rel="header">
         <!-- eMAG icon + title-->
         <div class="col-md-3 form-inline" style="background-color:#005eb7;">
             <div class="media">
@@ -50,7 +50,7 @@
         </div>
     </div>
 <!--body-->
-    <div id="accordions">
+    <div id="accordions" class="body">
         <!--Courses-->
         <div class="card">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

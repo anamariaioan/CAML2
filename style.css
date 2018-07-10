@@ -26,51 +26,6 @@ Header Styling
     width: auto;
 }
 
-/******************************
-Sidebar Styling
-*******************************/
-
-.sidenav {
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    z-index: -1;
-    top: 3%;
-    left: 0;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    padding-top: 80px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 115%;
-    color: black;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #787878;
-    text-decoration: none;
-}
-
-.main-page {
-    margin-left: 17%;
-    top: 10%;
-    position: fixed;
-
-}
-
-.sidenav ul {
-    list-style-type: none;
-    display: block;
-}
-
-.sidenav li {
-    width: 100%;
-}
-
 .card-title h6 {
     font-weight: bold;
 }
@@ -83,12 +38,16 @@ Sidebar Styling
 
 
 .btn-link:hover {
-    background: lightgray!important;
+    background: #D7ECFF!important;
 }
 
 #accordions {
     max-width: 1400px;
     margin: auto;
+}
+
+.body {
+    padding-top: 5%!important;
 }
 
 .card {
