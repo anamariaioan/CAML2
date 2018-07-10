@@ -70,3 +70,22 @@ Sidebar Styling
 .sidenav li {
     width: 100%;
 }
+
+.card-title h6 {
+    font-weight: bold;
+}
+
+.btn-link {
+    text-decoration: none!important;
+    color: crimson!important;
+}
+
+
+.card-header:hover {
+    background: lightgray!important;
+}
+
+#accordions {
+    max-width: 1500px;
+    margin: auto;
+}

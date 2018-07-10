@@ -54,15 +54,15 @@
         <!--Courses-->
         <div class="card">
             <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
+                <span class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="fas fa-book-open"></span> Courses
+                        <h5><span class="fas fa-book-open"></span> Courses</h5>
                     </button>
-                </h5>
+                </span>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
                 <div class="card card-body">
-                    <h5 class="card-title">Course 1</h5>
+                    <h6 class="card-title" style="font-weight: bold">Course 1</h6>
                     <div class="card-text">
                         Course 1 description
                         <div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="card card-body">
-                    <h5 class="card-title">Course 2</h5>
+                    <h6 class="card-title" style="font-weight: bold">Course 2</h6>
                     <div class="card-text">
                         Course 2 description
                         <div>
@@ -84,15 +84,15 @@
         <!--Meetings-->
         <div class="card">
             <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
+                <span class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <span class="fas fa-users"></span><span> Meetings
+                        <h5><span class="fas fa-users"></span><span> Meetings</span></h5>
                     </button>
-                </h5>
+                </span>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
                 <div class="card card-body">
-                    <h5 class="card-title">Meeting 1</h5>
+                    <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
                     <div class="card-text">
                         Meeting 1 description
                         <div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="card card-body">
-                    <h5 class="card-title">Meeting 2</h5>
+                    <h6 class="card-title" style="font-weight: bold">Meeting 2</h6>
                     <div class="card-text">
                         Meeting 2 description
                         <div>
@@ -114,15 +114,15 @@
         <!--Ideas-->
         <div class="card">
             <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
+                <span class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <span class="fas fa-lightbulb"></span><span> Ideas
+                        <h5><span class="fas fa-lightbulb"></span><span> Ideas</span></h5>
                     </button>
-                </h5>
+                </span>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
                 <div class="card card-body">
-                <h5 class="card-title">Idea 1</h5>
+                <h6 class="card-title" style="font-weight: bold">Idea 1</h6>
                 <div class="card-text">
                     Idea 1 description
                     <div>
@@ -131,7 +131,7 @@
                 </div>
                 </div>
                 <div class="card card-body">
-                <h5 class="card-title">Idea 2</h5>
+                <h6 class="card-title" style="font-weight: bold">Idea 2</h6>
                 <div class="card-text">
                     Idea 2 description
                     <div>
