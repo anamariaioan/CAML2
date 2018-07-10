@@ -78,14 +78,19 @@ Sidebar Styling
 .btn-link {
     text-decoration: none!important;
     color: crimson!important;
+    background-color: aliceblue!important;
 }
 
 
-.card-header:hover {
+.btn-link:hover {
     background: lightgray!important;
 }
 
 #accordions {
     max-width: 1500px;
     margin: auto;
+}
+
+.card {
+    text-align: center!important;
 }

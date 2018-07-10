@@ -12,7 +12,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 
 
-
+    <link rel="icon" href="imgs/caml-logo.png">
     <title>CAML</title>
 
 </head>
@@ -53,13 +53,11 @@
     <div id="accordions">
         <!--Courses-->
         <div class="card">
-            <div class="card-header" id="headingOne">
-                <span class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5><span class="fas fa-book-open"></span> Courses</h5>
-                    </button>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="mb-0" id="headingOne">
+                    <h5><span class="fas fa-book-open"></span><span> Courses</span></h5>
                 </span>
-            </div>
+            </button>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
                 <div class="card card-body">
                     <h6 class="card-title" style="font-weight: bold">Course 1</h6>
@@ -83,14 +81,12 @@
         </div>
         <!--Meetings-->
         <div class="card">
-            <div class="card-header" id="headingTwo">
-                <span class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <h5><span class="fas fa-users"></span><span> Meetings</span></h5>
-                    </button>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <span class="mb-0" id="headingTwo">
+                    <h5><span class="fas fa-users"></span><span> Meetings</span></h5>
                 </span>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
+            </button>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#headingTwo">
                 <div class="card card-body">
                     <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
                     <div class="card-text">
@@ -113,20 +109,18 @@
         </div>
         <!--Ideas-->
         <div class="card">
-            <div class="card-header" id="headingThree">
-                <span class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <h5><span class="fas fa-lightbulb"></span><span> Ideas</span></h5>
-                    </button>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <span class="mb-0" id="headingThree">
+                    <h5><span class="fas fa-lightbulb"></span><span> Ideas</span></h5>
                 </span>
-            </div>
+            </button>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
                 <div class="card card-body">
                 <h6 class="card-title" style="font-weight: bold">Idea 1</h6>
                 <div class="card-text">
                     Idea 1 description
                     <div>
-                        <a href="#" class="btn btn-primary">Apply</a>
+                        <a href="#" class="btn btn-primary">Vote</a>
                     </div>
                 </div>
                 </div>
@@ -135,7 +129,7 @@
                 <div class="card-text">
                     Idea 2 description
                     <div>
-                        <a href="#" class="btn btn-primary">Apply</a>
+                        <a href="#" class="btn btn-primary">Vote</a>
                     </div>
                 </div>
                 </div>
