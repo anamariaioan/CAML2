@@ -77,7 +77,7 @@ Sidebar Styling
 
 .btn-link {
     text-decoration: none!important;
-    color: crimson!important;
+    width: 100%;
 }
 
 
@@ -88,4 +88,13 @@ Sidebar Styling
 #accordions {
     max-width: 1500px;
     margin: auto;
+    display: flex;
+    /*display: block*/
+}
+.card {
+    color: black;
+}
+
+h5 {
+    color: crimson!important;
 }
