@@ -12,13 +12,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 
 
-
+    <link rel="icon" href="imgs/caml-logo.png">
     <title>CAML</title>
 
 </head>
 <body>
 
-    <div class="row">
+<!--Header-->
+    <div class="row fixed-top" rel="header">
+        <!-- eMAG icon + title-->
         <div class="col-md-3 form-inline" style="background-color:#005eb7;">
             <div class="media">
                     <div class="media-left media-middle">
@@ -29,10 +31,10 @@
                     </div>
             </div>
         </div>
-
+        <!--blue blank-->
         <div class="col-md-6" style="background-color:#005eb7;">
         </div>
-
+        <!--My account-->
         <div class="col-md-3 row form-inline" style="background-color:#005eb7;">
             <div class="dropdown" style="margin-left: 60%">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,78 +43,98 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Ideas</a>
                     <a class="dropdown-item" href="#">Log out</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="sidenav">
-        <ul>
-            <li><a href="#collapseCourses" data-toggle="collapse" aria-expanded="true" aria-controls="collapseCourses"><span class="fas fa-book-open"></span><span> Courses</span></a></li>
-            <li><a href="#collapseMeetings" data-toggle="collapse" aria-expanded="false" aria-controls="collapseMeetings"><span class="fas fa-users"></span><span> Meetings</span></a></li>
-            <li><a href="#collapseIdeas" data-toggle="collapse" aria-expanded="false" aria-controls="collapseIdeas"><span class="fas fa-lightbulb"></span><span> Ideas</span></a></li>
-            <li></br></br></br></br></br></br></br></br></li>
-            <li><button class="btn btn-outline-info btn-sm" data-target=".multi-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCourses collapseMeetings collapseIdeas"><span class=""></span><span> Show All/Hide All</span></button></li>
-        </ul>
-    </div>
-
-    <div class="main-page">
-        <div class="col">
-            <div class="collapsing.show multi-collapse" id="collapseCourses">
+<!--body-->
+    <div id="accordions" class="body">
+        <!--Courses-->
+        <div class="card">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="mb-0" id="headingOne">
+                    <h5><span class="fas fa-book-open"></span><span> Courses</span></h5>
+                </span>
+            </button>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
                 <div class="card card-body">
-                        <h5 class="card-title">Course 1</h5>
+                    <h6 class="card-title" style="font-weight: bold">Course 1</h6>
                     <div class="card-text">
                         Course 1 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
                 <div class="card card-body">
-                    <h5 class="card-title">Course 2</h5>
+                    <h6 class="card-title" style="font-weight: bold">Course 2</h6>
                     <div class="card-text">
                         Course 2 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="collapse.show multi-collapse" id="collapseMeetings">
+        <!--Meetings-->
+        <div class="card">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <span class="mb-0" id="headingTwo">
+                    <h5><span class="fas fa-users"></span><span> Meetings</span></h5>
+                </span>
+            </button>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#headingTwo">
                 <div class="card card-body">
-                    <h5 class="card-title">Meeting 1</h5>
+                    <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
                     <div class="card-text">
                         Meeting 1 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
                 <div class="card card-body">
-                    <h5 class="card-title">Meeting 2</h5>
+                    <h6 class="card-title" style="font-weight: bold">Meeting 2</h6>
                     <div class="card-text">
                         Meeting 2 description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="collapse.show multi-collapse" id="collapseIdeas">
+        <!--Ideas-->
+        <div class="card">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <span class="mb-0" id="headingThree">
+                    <h5><span class="fas fa-lightbulb"></span><span> Ideas</span></h5>
+                </span>
+            </button>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
                 <div class="card card-body">
-                    <h5 class="card-title">Idea 1</h5>
-                    <div class="card-text">
-                        Idea 1 description
+                <h6 class="card-title" style="font-weight: bold">Idea 1</h6>
+                <div class="card-text">
+                    Idea 1 description
+                    <div>
+                        <a href="#" class="btn btn-primary">Vote</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
+                </div>
                 </div>
                 <div class="card card-body">
-                    <h5 class="card-title">Idea 2</h5>
-                    <div class="card-text">
-                        Idea 2 description
+                <h6 class="card-title" style="font-weight: bold">Idea 2</h6>
+                <div class="card-text">
+                    Idea 2 description
+                    <div>
+                        <a href="#" class="btn btn-primary">Vote</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Apply</a>
+                </div>
                 </div>
             </div>
         </div>
-
     </div>
 
 </body>

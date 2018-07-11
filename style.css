@@ -26,47 +26,30 @@ Header Styling
     width: auto;
 }
 
-/******************************
-Sidebar Styling
-*******************************/
-
-.sidenav {
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    z-index: -1;
-    top: 3%;
-    left: 0;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    padding-top: 80px;
+.card-title h6 {
+    font-weight: bold;
 }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 115%;
-    color: black;
-    display: block;
+.btn-link {
+    text-decoration: none!important;
+    color: crimson!important;
+    background-color: aliceblue!important;
 }
 
-.sidenav a:hover {
-    color: #787878;
-    text-decoration: none;
+
+.btn-link:hover {
+    background: #D7ECFF!important;
 }
 
-.main-page {
-    margin-left: 17%;
-    top: 10%;
-    position: fixed;
-
+#accordions {
+    max-width: 1400px;
+    margin: auto;
 }
 
-.sidenav ul {
-    list-style-type: none;
-    display: block;
+.body {
+    padding-top: 5%!important;
 }
 
-.sidenav li {
-    width: 100%;
+.card {
+    text-align: center!important;
 }
