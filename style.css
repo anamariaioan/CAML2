@@ -32,7 +32,6 @@ Header Styling
 
 .btn-link {
     text-decoration: none!important;
-    color: crimson!important;
     background-color: aliceblue!important;
 }
 
@@ -43,12 +42,55 @@ Header Styling
 
 .body {
     padding-top: 5%!important;
+<<<<<<< HEAD
     max-width: 1000px;
     margin: auto;
+=======
+    max-width: 1400px;
+    margin: auto;
 }
-
 .card {
     text-align: center!important;
+}
+
+
+
+New Ideas Styling
+*******************************/
+
+.crimson {
+    color: crimson!important;
+>>>>>>> 4c0c4933188ff937a9e9b8dcb8800f9d140a0ef3
+}
+
+.logo-caml {
+    width: 4%;
+    height: auto;
+}
+
+.logo-caml:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/*.logo-caml:hover {*/
+    /*opacity: 0;*/
+/*}*/
+
+/******************************
+
+Login Page
+*******************************/
+.main-content{
+    background-color: #D7ECFF;
+}
+.panel-body {
+    padding: 30px 13px;
+}
+
+.page-content {
+    text-align: center!important;
+<<<<<<< HEAD
 }
 
 
@@ -224,4 +266,47 @@ span.tags
 
     width: 39px;
     height: auto;
+=======
+    padding-top: 10%;
+    box-sizing: content-box;
+    font-family: Open_sans,Helvetica,Arial,sans-serif;
+}
+
+.panel  {
+    margin-bottom: 80px;
+    margin-left: 580px!important;
+    margin-right: 580px!important;
+    margin-top: -25px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 30px -5px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+#_username {
+    margin-right: 60%;
+    margin-top: 10%;
+}
+
+#password_ {
+    margin-right: 78%;
+    margin-top: 2%;
+}
+
+.checkbox {
+    margin-top: -4%;
+}
+
+#_checkbox {
+    float:left;
+}
+
+#forgot_password {
+    float:right;
+}
+
+.login_button{
+    margin-top: 10%;
+>>>>>>> 4c0c4933188ff937a9e9b8dcb8800f9d140a0ef3
 }
