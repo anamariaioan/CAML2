@@ -42,7 +42,7 @@
                     My account
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="Profile.php">Profile</a>
                     <a class="dropdown-item" href="#">Ideas</a>
                     <a class="dropdown-item" href="#">Log out</a>
                 </div>
