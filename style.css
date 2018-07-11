@@ -58,7 +58,6 @@ New Ideas Styling
 
 .crimson {
     color: crimson!important;
->>>>>>> 4c0c4933188ff937a9e9b8dcb8800f9d140a0ef3
 }
 
 .logo-caml {
@@ -95,7 +94,7 @@ Login Page
 Profile Styling
 *******************************/
 
-.body
+.body /*alta clasa*/
 {
     font-family: 'Lato', 'sans-serif';
 }
