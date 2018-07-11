@@ -32,18 +32,12 @@ Header Styling
 
 .btn-link {
     text-decoration: none!important;
-    color: crimson!important;
     background-color: aliceblue!important;
 }
 
 
 .btn-link:hover {
     background: #D7ECFF!important;
-}
-
-#accordions {
-    max-width: 1400px;
-    margin: auto;
 }
 
 .body {
@@ -55,7 +49,31 @@ Header Styling
     text-align: center!important;
 }
 
+
+
+New Ideas Styling
+*******************************/
+
+.crimson {
+    color: crimson!important;
+}
+
+.logo-caml {
+    width: 4%;
+    height: auto;
+}
+
+.logo-caml:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/*.logo-caml:hover {*/
+    /*opacity: 0;*/
+/*}*/
+
 /******************************
+
 Login Page
 *******************************/
 .main-content{
