@@ -48,8 +48,64 @@ Header Styling
 
 .body {
     padding-top: 5%!important;
+    max-width: 1400px;
+    margin: auto;
 }
-
 .card {
     text-align: center!important;
+}
+
+/******************************
+Login Page
+*******************************/
+.main-content{
+    background-color: #D7ECFF;
+}
+.panel-body {
+    padding: 30px 13px;
+}
+
+.page-content {
+    text-align: center!important;
+    padding-top: 10%;
+    box-sizing: content-box;
+    font-family: Open_sans,Helvetica,Arial,sans-serif;
+}
+
+.panel  {
+    margin-bottom: 80px;
+    margin-left: 580px!important;
+    margin-right: 580px!important;
+    margin-top: -25px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 30px -5px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+#_username {
+    margin-right: 60%;
+    margin-top: 10%;
+}
+
+#password_ {
+    margin-right: 78%;
+    margin-top: 2%;
+}
+
+.checkbox {
+    margin-top: -4%;
+}
+
+#_checkbox {
+    float:left;
+}
+
+#forgot_password {
+    float:right;
+}
+
+.login_button{
+    margin-top: 10%;
 }
