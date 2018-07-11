@@ -7,6 +7,7 @@
  */
 
 require __DIR__ . '/header-myaccount.html';
+
 ?>
 
 <!DOCTYPE html>
