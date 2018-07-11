@@ -32,7 +32,6 @@ Header Styling
 
 .btn-link {
     text-decoration: none!important;
-    color: crimson!important;
     background-color: aliceblue!important;
 }
 
@@ -41,15 +40,34 @@ Header Styling
     background: #D7ECFF!important;
 }
 
-#accordions {
-    max-width: 1400px;
-    margin: auto;
-}
-
 .body {
     padding-top: 5%!important;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .card {
     text-align: center!important;
 }
+
+/******************************
+New Ideas Styling
+*******************************/
+
+.crimson {
+    color: crimson!important;
+}
+
+.logo-caml {
+    width: 4%;
+    height: auto;
+}
+
+.logo-caml:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/*.logo-caml:hover {*/
+    /*opacity: 0;*/
+/*}*/

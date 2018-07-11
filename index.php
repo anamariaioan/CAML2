@@ -12,7 +12,7 @@ require __DIR__ . '/header-myaccount.html';
     <div id="accordions" class="body">
         <!--Courses-->
         <div class="card">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link crimson" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <span class="mb-0" id="headingOne">
                     <h5><span class="fas fa-book-open"></span><span> Courses</span></h5>
                 </span>
@@ -40,7 +40,7 @@ require __DIR__ . '/header-myaccount.html';
         </div>
         <!--Meetings-->
         <div class="card">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <button class="btn btn-link crimson" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <span class="mb-0" id="headingTwo">
                     <h5><span class="fas fa-users"></span><span> Meetings</span></h5>
                 </span>
@@ -68,7 +68,7 @@ require __DIR__ . '/header-myaccount.html';
         </div>
         <!--Ideas-->
         <div class="card">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <button class="btn btn-link crimson" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 <span class="mb-0" id="headingThree">
                     <h5><span class="fas fa-lightbulb"></span><span> Ideas</span></h5>
                 </span>
