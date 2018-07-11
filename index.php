@@ -8,7 +8,6 @@ require __DIR__ . '/header-myaccount.html';
 <html>
 <body>
 
-<<<<<<< HEAD
 <!--Header-->
     <div class="row fixed-top" rel="header">
         <!-- eMAG icon + title-->
@@ -40,8 +39,7 @@ require __DIR__ . '/header-myaccount.html';
             </div>
         </div>
     </div>
-=======
->>>>>>> 76f2918304ad568c41fe53efb52907aeeb8034a4
+
 <!--body-->
     <div id="accordions" class="body">
         <!--Courses-->

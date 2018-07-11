@@ -42,10 +42,8 @@ Header Styling
 
 .body {
     padding-top: 5%!important;
-<<<<<<< HEAD
     max-width: 1000px;
     margin: auto;
-=======
     max-width: 1400px;
     margin: auto;
 }
@@ -54,7 +52,7 @@ Header Styling
 }
 
 
-
+/******************************
 New Ideas Styling
 *******************************/
 
@@ -90,93 +88,8 @@ Login Page
 
 .page-content {
     text-align: center!important;
-<<<<<<< HEAD
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /******************************
 Profile Styling
@@ -266,7 +179,6 @@ span.tags
 
     width: 39px;
     height: auto;
-=======
     padding-top: 10%;
     box-sizing: content-box;
     font-family: Open_sans,Helvetica,Arial,sans-serif;
@@ -308,5 +220,4 @@ span.tags
 
 .login_button{
     margin-top: 10%;
->>>>>>> 4c0c4933188ff937a9e9b8dcb8800f9d140a0ef3
 }
