@@ -8,6 +8,40 @@ require __DIR__ . '/header-myaccount.html';
 <html>
 <body>
 
+<<<<<<< HEAD
+<!--Header-->
+    <div class="row fixed-top" rel="header">
+        <!-- eMAG icon + title-->
+        <div class="col-md-3 form-inline" style="background-color:#005eb7;">
+            <div class="media">
+                    <div class="media-left media-middle">
+                        <div><a href="index.php"><img class="lgo-icon" src="imgs/logo.png"></a></div>
+                    </div>
+                    <div class="media-body">
+                        <h1 class="lgo">CAML</h1>
+                    </div>
+            </div>
+        </div>
+        <!--blue blank-->
+        <div class="col-md-6" style="background-color:#005eb7;">
+        </div>
+        <!--My account-->
+        <div class="col-md-3 row form-inline" style="background-color:#005eb7;">
+            <div class="dropdown" style="margin-left: 60%">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-user"></span>
+                    My account
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="Profile.php">Profile</a>
+                    <a class="dropdown-item" href="#">Ideas</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+=======
+>>>>>>> 76f2918304ad568c41fe53efb52907aeeb8034a4
 <!--body-->
     <div id="accordions" class="body">
         <!--Courses-->
