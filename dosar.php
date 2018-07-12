@@ -9,7 +9,7 @@
 $configuration = [
     'db_dsn'  => 'mysql:host=gen-centos729942-all-dev.newton.c.emag.network;db=CAML',
     'db_user' => 'root',
-    'db_pass' => '0000'
+    'db_pass' => 'dkeOErdod5=M'
 ];
 
 require_once __DIR__.'/lib/Model/Idea.php';
