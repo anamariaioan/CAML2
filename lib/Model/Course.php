@@ -6,6 +6,8 @@
  * Time: 11:44
  */
 
+namespace Model;
+
 class Course
 {
     /**

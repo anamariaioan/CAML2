@@ -1,12 +1,23 @@
 <?php
 
-require __DIR__ . '/header-myaccount.html';
+
+
+require __DIR__ .'/header-myaccount.html';
+require __DIR__.'/dosar.php';
 
 ?>
 
 <!DOCTYPE html>
 <html>
-<body>
+<body class="body">
+
+<?php
+use Service\PdoContainer;
+
+$container = new PdoContainer($configuration);
+$courses =$container->getCoursesLoader();
+
+?>
 
 <!--body-->
     <div id="accordions" class="body">
@@ -18,24 +29,17 @@ require __DIR__ . '/header-myaccount.html';
                 </span>
             </button>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Course 1</h6>
-                    <div class="card-text">
-                        Course 1 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
+                <?php foreach ($courses as $course): ?>
+                    <div class="card card-body">
+                        <h6 class="card-title" style="font-weight: bold"><?php echo $course['title']; ?></h6>
+                        <div class="card-text">
+                            <?php echo $course['description']; ?>
+                            <div>
+                                <a href="#" class="btn btn-primary">Apply</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Course 2</h6>
-                    <div class="card-text">
-                        Course 2 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
         <!--Meetings-->

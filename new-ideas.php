@@ -14,7 +14,7 @@ require __DIR__ . '/header-myaccount.html';
 <html>
 <body>
     <div class="body jumbotron ">
-        <form class="needs-validation">
+        <form class="needs-validation" action="/lib/Service/IdeaService.php" method="post">
             <div>
                 <h5 class="display-4 text-left crimson">
                     Suggest a meeting or a course <img src="imgs/caml-logo.png" class="logo-caml">
@@ -26,18 +26,18 @@ require __DIR__ . '/header-myaccount.html';
             <hr class="my-4">
             <div class="form-group">
                 <label for="ideaType" class="crimson">You would like to suggest a</label>
-                <select class="form-control" id="ideaType">
+                <select class="form-control" id="ideaType" name="ideaType">
                     <option>Course</option>
                     <option>Meeting</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="ideaTitle" class="crimson">Title</label>
-                <input type="text" class="form-control" id="ideaTitle" placeholder="What is this all about?" required>
+                <input type="text" class="form-control" id="ideaTitle" placeholder="What is this all about?" required name="ideaTitle">
             </div>
             <div class="form-group">
                 <label for="ideaDescription" class="crimson">Description</label>
-                <textarea class="form-control" id="ideaDescription" rows="3" placeholder="Tell us more :)" required></textarea>
+                <textarea class="form-control" id="ideaDescription" rows="3" placeholder="Tell us more :)" required name="ideaDescription"></textarea>
             </div>
             <div align="right">
                 <button type="submit" class="btn btn-primary">May the votes be with you</button>
