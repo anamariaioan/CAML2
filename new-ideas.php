@@ -12,7 +12,7 @@ require __DIR__ . '/header-myaccount.html';
 
 <!DOCTYPE html>
 <html>
-<body>
+<body class="body">
     <div class="body jumbotron ">
         <form class="needs-validation" action="/lib/Service/IdeaService.php" method="post">
             <div>

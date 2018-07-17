@@ -9,7 +9,6 @@
 namespace Service;
 
 use PDO;
-use Service\IdeaService;
 
 class PdoContainer
 {
@@ -36,11 +35,23 @@ class PdoContainer
         return $coursesLoader->getCourses();
     }
 
-    public function insertIdea()
+    public function getMeetingsLoader()
     {
-        $insertIdea = new IdeaService();
+        $meetingsLoader = new MeetingsLoader($this->pdo);
 
+        return $meetingsLoader->getMeetings();
+    }
 
+    public function insertIdea($array)
+    {
+        $ideaType = $array['ideaType'];
+        $ideaTitle = $array['ideaTitle'];
+        $ideaDescription = $array['ideaDescription'];
+
+        $statement = $this->pdo->prepare("INSERT INTO ideas(author, idea_type, title, description, votes) VALUES ('Meri', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}',0)");
+
+        echo 'Success';
+        return $statement->execute();
     }
 
 }

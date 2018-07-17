@@ -15,8 +15,8 @@ require __DIR__.'/dosar.php';
 use Service\PdoContainer;
 
 $container = new PdoContainer($configuration);
-$courses =$container->getCoursesLoader();
-
+$courses = $container->getCoursesLoader();
+$meetings = $container->getMeetingsLoader();
 ?>
 
 <!--body-->
@@ -50,24 +50,17 @@ $courses =$container->getCoursesLoader();
                 </span>
             </button>
             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#headingTwo">
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
-                    <div class="card-text">
-                        Meeting 1 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
+                <?php foreach ($meetings as $meeting): ?>
+                    <div class="card card-body">
+                        <h6 class="card-title" style="font-weight: bold"><?php echo$meeting['title']; ?></h6>
+                        <div class="card-text">
+                            <?php echo $meeting['description']; ?>
+                            <div>
+                                <a href="#" class="btn btn-primary">Apply</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Meeting 2</h6>
-                    <div class="card-text">
-                        Meeting 2 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
         <!--Ideas-->
