@@ -7,7 +7,7 @@
  */
 
 require __DIR__ . '/header-myaccount.html';
-require __DIR__ . '/lib/Service/IdeaService.php';
+require __DIR__ . '/idea-saved.php';
 
 ?>
 
@@ -15,7 +15,7 @@ require __DIR__ . '/lib/Service/IdeaService.php';
 <html>
 <body class="body">
     <div class="body jumbotron ">
-        <form class="needs-validation" action="/lib/Service/IdeaService.php" method="post">
+        <form class="needs-validation" action="/idea-saved.php" method="post">
             <div>
                 <h5 class="display-4 text-left crimson">
                     Suggest a meeting or a course <img src="imgs/caml-logo.png" class="logo-caml">

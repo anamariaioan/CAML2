@@ -8,7 +8,7 @@
 
 namespace Service;
 
-require_once __DIR__."/../../dosar.php";
+require_once __DIR__ . "/dosar.php";
 
 
 $pdo = new PdoContainer($configuration);
