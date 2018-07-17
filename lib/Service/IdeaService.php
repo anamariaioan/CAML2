@@ -13,4 +13,6 @@ require_once __DIR__."/../../dosar.php";
 
 $pdo = new PdoContainer($configuration);
 
-$pdo->insertIdea($_POST);
+if(!empty($_POST)) {
+    $pdo->insertIdea($_POST);
+}

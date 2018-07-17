@@ -17,4 +17,3 @@ require_once __DIR__.'/lib/Model/Course.php';
 require_once __DIR__ . '/lib/Service/PdoContainer.php';
 require_once __DIR__.'/lib/Service/CoursesLoader.php';
 require_once __DIR__.'/lib/Service/MeetingsLoader.php';
-require_once __DIR__.'/lib/Service/IdeaService.php';
