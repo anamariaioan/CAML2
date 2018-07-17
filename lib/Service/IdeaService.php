@@ -10,12 +10,17 @@ namespace Service;
 
 require_once __DIR__."/../../dosar.php";
 
-$pdo = new PdoContainer($configuration);
+class IdeaService
+{
+    $pdo = new PdoContainer($configuration);
 
-$ideaType = $_POST['ideaType'];
-$ideaTitle = $_POST['ideaTitle'];
-$ideaDescription = $_POST['ideaDescription'];
+    $ideaType = $_POST['ideaType'];
+    $ideaTitle = $_POST['ideaTitle'];
+    $ideaDescription = $_POST['ideaDescription'];
 
-$pdo->insertIdea($_POST);
+    $pdo->insertIdea($_POST);
+    
+}
+
 
 
