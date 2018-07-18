@@ -1,47 +1,24 @@
 <?php
 
-require __DIR__ . '/header-myaccount.html';
+
+
+require __DIR__ .'/header-myaccount.html';
+require __DIR__.'/dosar.php';
 
 ?>
 
 <!DOCTYPE html>
 <html>
-<body>
+<body class="body">
 
-<<<<<<< HEAD
-<!--Header-->
-    <div class="row fixed-top" rel="header">
-        <!-- eMAG icon + title-->
-        <div class="col-md-3 form-inline" style="background-color:#005eb7;">
-            <div class="media">
-                    <div class="media-left media-middle">
-                        <div><a href="index.php"><img class="lgo-icon" src="imgs/logo.png"></a></div>
-                    </div>
-                    <div class="media-body">
-                        <h1 class="lgo">CAML</h1>
-                    </div>
-            </div>
-        </div>
-        <!--blue blank-->
-        <div class="col-md-6" style="background-color:#005eb7;">
-        </div>
-        <!--My account-->
-        <div class="col-md-3 row form-inline" style="background-color:#005eb7;">
-            <div class="dropdown" style="margin-left: 60%">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="fa fa-user"></span>
-                    My account
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="Profile.php">Profile</a>
-                    <a class="dropdown-item" href="#">Ideas</a>
-                    <a class="dropdown-item" href="#">Log out</a>
-                </div>
-            </div>
-        </div>
-    </div>
-=======
->>>>>>> 76f2918304ad568c41fe53efb52907aeeb8034a4
+<?php
+use Service\PdoContainer;
+
+$container = new PdoContainer($configuration);
+$courses = $container->getCoursesLoader();
+$meetings = $container->getMeetingsLoader();
+?>
+
 <!--body-->
     <div id="accordions" class="body">
         <!--Courses-->
@@ -52,24 +29,17 @@ require __DIR__ . '/header-myaccount.html';
                 </span>
             </button>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Course 1</h6>
-                    <div class="card-text">
-                        Course 1 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
+                <?php foreach ($courses as $course): ?>
+                    <div class="card card-body">
+                        <h6 class="card-title" style="font-weight: bold"><?php echo $course['title']; ?></h6>
+                        <div class="card-text">
+                            <?php echo $course['description']; ?>
+                            <div>
+                                <a href="#" class="btn btn-primary">Apply</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Course 2</h6>
-                    <div class="card-text">
-                        Course 2 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
         <!--Meetings-->
@@ -80,24 +50,17 @@ require __DIR__ . '/header-myaccount.html';
                 </span>
             </button>
             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#headingTwo">
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
-                    <div class="card-text">
-                        Meeting 1 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
+                <?php foreach ($meetings as $meeting): ?>
+                    <div class="card card-body">
+                        <h6 class="card-title" style="font-weight: bold"><?php echo$meeting['title']; ?></h6>
+                        <div class="card-text">
+                            <?php echo $meeting['description']; ?>
+                            <div>
+                                <a href="#" class="btn btn-primary">Apply</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-body">
-                    <h6 class="card-title" style="font-weight: bold">Meeting 2</h6>
-                    <div class="card-text">
-                        Meeting 2 description
-                        <div>
-                            <a href="#" class="btn btn-primary">Apply</a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
         <!--Ideas-->

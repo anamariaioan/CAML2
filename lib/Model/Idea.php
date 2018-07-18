@@ -6,6 +6,8 @@
  * Time: 16:15
  */
 
+namespace Model;
+
 class Idea
 {
     /**
