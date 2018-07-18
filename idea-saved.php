@@ -8,11 +8,22 @@
 
 namespace Service;
 
+require __DIR__ . '/header-myaccount.html';
 require_once __DIR__ . "/dosar.php";
 
+?>
 
-$pdo = new PdoContainer($configuration);
+<!DOCTYPE html>
+<html>
+<body class="body">
+    <?php
 
-if(!empty($_POST)) {
-    $pdo->insertIdea($_POST);
-}
+    $pdo = new PdoContainer($configuration);
+
+    if(!empty($_POST)) {
+        $pdo->insertIdea($_POST);
+    }
+
+    ?>
+</body>
+</html>
