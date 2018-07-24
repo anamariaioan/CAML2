@@ -8,8 +8,7 @@
 
 namespace Service;
 
-require __DIR__ . '/header-myaccount.html';
-require_once __DIR__ . "/dosar.php";
+require __DIR__ . "/dosar.php";
 
 ?>
 

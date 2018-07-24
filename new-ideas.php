@@ -6,8 +6,7 @@
  * Time: 13:08
  */
 
-require __DIR__ . '/header-myaccount.html';
-require __DIR__ . '/idea-saved.php';
+require __DIR__ . "/dosar.php";
 
 ?>
 
