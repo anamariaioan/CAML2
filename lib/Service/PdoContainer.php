@@ -50,7 +50,6 @@ class PdoContainer
 
         $statement = $this->pdo->prepare("INSERT INTO ideas(author, idea_type, title, description, votes) VALUES ('Meri', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}',0)");
 
-        echo "Success";
         return $statement->execute();
     }
 

@@ -22,8 +22,9 @@ require_once __DIR__ . "/dosar.php";
 
     if(!empty($_POST)) {
         $pdo->insertIdea($_POST);
-    }
+    };
 
     ?>
+
 </body>
 </html>
