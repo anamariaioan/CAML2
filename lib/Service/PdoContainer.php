@@ -28,18 +28,11 @@ class PdoContainer
 
     }
 
-    public function getCoursesLoader()
+    public function getIdeasLoader()
     {
-        $coursesLoader = new CoursesLoader($this->pdo);
+        $ideasLoader = new IdeasLoader($this->pdo);
 
-        return $coursesLoader->getCourses();
-    }
-
-    public function getMeetingsLoader()
-    {
-        $meetingsLoader = new MeetingsLoader($this->pdo);
-
-        return $meetingsLoader->getMeetings();
+        return $ideasLoader->getIdeas();
     }
 
     public function insertIdea($array)

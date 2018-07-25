@@ -12,8 +12,7 @@ require __DIR__ . "/dosar.php";
 use Service\PdoContainer;
 
 $container = new PdoContainer($configuration);
-$courses = $container->getCoursesLoader();
-$meetings = $container->getMeetingsLoader();
+$ideas = $container->getIdeasLoader();
 ?>
 
 <!--body-->
@@ -26,17 +25,15 @@ $meetings = $container->getMeetingsLoader();
                 </span>
             </button>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#headingOne">
-                <?php foreach ($courses as $course): ?>
-                    <div class="card card-body">
-                        <h6 class="card-title" style="font-weight: bold"><?php echo $course['title']; ?></h6>
-                        <div class="card-text">
-                            <?php echo $course['description']; ?>
-                            <div>
-                                <a href="#" class="btn btn-primary">Apply</a>
-                            </div>
+                <div class="card card-body">
+                    <h6 class="card-title" style="font-weight: bold">Course 1</h6>
+                    <div class="card-text">
+                        Course Description
+                        <div>
+                            <a href="#" class="btn btn-primary">Apply</a>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                </div>
             </div>
         </div>
         <!--Meetings-->
@@ -47,17 +44,15 @@ $meetings = $container->getMeetingsLoader();
                 </span>
             </button>
             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#headingTwo">
-                <?php foreach ($meetings as $meeting): ?>
                     <div class="card card-body">
-                        <h6 class="card-title" style="font-weight: bold"><?php echo$meeting['title']; ?></h6>
+                        <h6 class="card-title" style="font-weight: bold">Meeting 1</h6>
                         <div class="card-text">
-                            <?php echo $meeting['description']; ?>
+                            Meeting description
                             <div>
                                 <a href="#" class="btn btn-primary">Apply</a>
                             </div>
                         </div>
                     </div>
-                <?php endforeach; ?>
             </div>
         </div>
         <!--Ideas-->
@@ -68,24 +63,17 @@ $meetings = $container->getMeetingsLoader();
                 </span>
             </button>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
-                <div class="card card-body">
-                <h6 class="card-title" style="font-weight: bold">Idea 1</h6>
-                <div class="card-text">
-                    Idea 1 description
-                    <div>
-                        <a href="#" class="btn btn-primary">Vote</a>
+                <?php foreach ($ideas as $idea): ?>
+                    <div class="card card-body">
+                        <h6 class="card-title" style="font-weight: bold"><?php echo $idea['title']; ?></h6>
+                        <div class="card-text">
+                            <?php echo $idea['description']; ?>
+                            <div>
+                                <a href="#" class="btn btn-primary">Vote</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="card card-body">
-                <h6 class="card-title" style="font-weight: bold">Idea 2</h6>
-                <div class="card-text">
-                    Idea 2 description
-                    <div>
-                        <a href="#" class="btn btn-primary">Vote</a>
-                    </div>
-                </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
