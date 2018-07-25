@@ -42,6 +42,7 @@ class PdoContainer
         return $meetingsLoader->getMeetings();
     }
 
+
     public function insertIdea($array)
     {
         $ideaType = $array['ideaType'];
