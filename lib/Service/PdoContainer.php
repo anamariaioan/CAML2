@@ -63,7 +63,13 @@ class PdoContainer
         return $statement->execute();
     }
 
-    public function getVotesForIdea($idIdea)
+    public function getUsernameLogin()
+    {
+        $new_user = new LoginUsers($this->pdo);
+
+        return $new_user->getuser();
+    }
+  public function getVotesForIdea($idIdea)
     {
         $statement = $this->pdo->query("SELECT votes_count FROM votes WHERE id_idea = {$idIdea}");
 
@@ -77,7 +83,6 @@ class PdoContainer
         $statement = $this->pdo->prepare("UPDATE votes SET votes_count = votes_count + 1 WHERE id_idea = {$idIdea}");
 
         return $statement->execute();
-
     }
 
 }

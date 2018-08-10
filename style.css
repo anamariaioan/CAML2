@@ -188,7 +188,7 @@ span.tags
     margin-bottom: 80px;
     margin-left: 580px!important;
     margin-right: 580px!important;
-    margin-top: -25px;
+    margin-top: 130px;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 2px;
@@ -218,7 +218,7 @@ span.tags
     float:right;
 }
 
-.login_button{
+.login_button {
     margin-top: 10%;
 }
 
