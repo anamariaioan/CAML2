@@ -21,6 +21,8 @@ require __DIR__ . "/dosar.php";
 
     if(!empty($_POST)) {
         $pdo->insertIdea($_POST);
+        $ideaId = $pdo->selectIdeaId();
+        $pdo->insertVotesForIdea($ideaId);
     };
 
     ?>

@@ -15,4 +15,5 @@ $configuration = [
 require_once __DIR__.'/lib/Model/Idea.php';
 require_once __DIR__ .'/lib/Service/PdoContainer.php';
 require_once __DIR__.'/lib/Service/IdeasLoader.php';
+require_once __DIR__.'/lib/Service/VotesIncrement.php';
 require_once __DIR__ . '/header-myaccount.html';
