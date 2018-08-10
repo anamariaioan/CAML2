@@ -85,4 +85,11 @@ class PdoContainer
         return $statement->execute();
     }
 
+    public function addrating()
+    {
+
+
+
+    }
+
 }

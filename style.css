@@ -222,6 +222,11 @@ span.tags
     margin-top: 10%;
 }
 
+<<<<<<< HEAD
+#uploadimg{
+    float: left;
+}
+=======
 /******************************
 Home Styling
 *******************************/
@@ -234,3 +239,4 @@ Home Styling
 .right-inform {
     text-align: end!important;
 }
+>>>>>>> f4f6234ba3b9d0564e158434f74deab83380bf8e

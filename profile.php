@@ -13,6 +13,16 @@ require __DIR__ . "/dosar.php";
             <div class="well profile">
                 <div class="col-md-12">
                     <div class="col-md-12 col-sm-8">
+                        <div id="uploadimg">
+                            <form action="uploadimg.php" method="post" enctype="multipart/form-data">
+                                Selecteaza imaginea pentru upload:
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="submit" value="Upload Image" name="submit">
+                            </form>
+                        </div>
+                        <div id="profileimg">
+                            <img src="uploads">
+                        </div>
                         <h2>Nicole Pearson</h2>
                         <h2>Team: Wonder</h2>
                         <p><strong>About: </strong> Web Designer / UI. </p>
