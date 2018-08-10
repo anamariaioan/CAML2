@@ -41,7 +41,8 @@ Header Styling
 }
 
 .body {
-    padding-top: 5%!important;
+    padding-top: 3%!important;
+    padding-bottom: 3%;!important;
     max-width: 1000px;
     margin: auto;
     max-width: 1400px;
@@ -187,7 +188,7 @@ span.tags
     margin-bottom: 80px;
     margin-left: 580px!important;
     margin-right: 580px!important;
-    margin-top: -25px;
+    margin-top: 130px;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 2px;
@@ -217,10 +218,25 @@ span.tags
     float:right;
 }
 
-.login_button{
+.login_button {
     margin-top: 10%;
 }
 
+<<<<<<< HEAD
 #uploadimg{
     float: left;
 }
+=======
+/******************************
+Home Styling
+*******************************/
+
+.left-inform {
+    text-align: start!important;
+    font-weight: bold;
+}
+
+.right-inform {
+    text-align: end!important;
+}
+>>>>>>> f4f6234ba3b9d0564e158434f74deab83380bf8e

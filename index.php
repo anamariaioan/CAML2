@@ -2,6 +2,8 @@
 
 require __DIR__ . "/dosar.php";
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 ?>
 
 <!DOCTYPE html>
@@ -68,8 +70,14 @@ $ideas = $container->getIdeasLoader();
                         <h6 class="card-title" style="font-weight: bold"><?php echo $idea['title']; ?></h6>
                         <div class="card-text">
                             <?php echo $idea['description']; ?>
-                            <div>
-                                <a href="#" class="btn btn-primary">Vote</a>
+                            <br/><br/>
+                            <div class="row">
+                                <div class="col-sm left-inform">
+                                    Votes: <?php echo $container->getVotesForIdea($idea['id']); ?>
+                                </div>
+                                <div class="col-sm right-inform">
+                                    <a href="votes-increment.php?id=<?php echo $idea['id'] ?>" class="btn btn-primary">Vote</a>
+                                </div>
                             </div>
                         </div>
                     </div>

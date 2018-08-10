@@ -1,5 +1,9 @@
 .idea
 .idea/
 .idea
+<<<<<<< HEAD
 .uploads/
 .uploads
+=======
+.idea/workspace.xml
+>>>>>>> f4f6234ba3b9d0564e158434f74deab83380bf8e

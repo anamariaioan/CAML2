@@ -1,5 +1,6 @@
 <?php
 require_once 'header.html';
+require  'lib/Service/PdoContainer.php';
 
 ?>
 <html>
@@ -33,7 +34,7 @@ require_once 'header.html';
                         Remember me
                     </label>
                     <small id="forgot_password">
-                        <a href="http://edison-dev.auth-server.auth-all25873-all-dev.edison.c.emag.network/forgot-password?adk=G4x68R4Nk1hd5KUu" class="user-actions">Forgot password?</a>
+                        <a href="http://localhost:8000/forgotpage.php" class="user-actions">Forgot password?</a>
                     </small>
                 </div>
                 <br>
