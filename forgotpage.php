@@ -24,7 +24,7 @@ require  'lib/Service/PdoContainer.php';
                             </div>
                             <div class="redirect_back float-left">
                                 <small>
-                                    <a href="http://localhost:8000/Login.php" class="user-actions_forgot">Back to authentication</a>
+                                    <a href="http://localhost:8000/login.php" class="user-actions_forgot">Back to authentication</a>
                                 </small>
                             </div>
                             <br>
