@@ -47,4 +47,12 @@ class PdoContainer
         return $statement->execute();
     }
 
+
+    public function getUsernameLogin()
+    {
+        $new_user = new LoginUsers($this->pdo);
+
+        return $new_user->getuser();
+    }
+
 }
