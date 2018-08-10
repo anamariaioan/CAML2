@@ -28,18 +28,11 @@ class PdoContainer
 
     }
 
-    public function getCoursesLoader()
+    public function getIdeasLoader()
     {
-        $coursesLoader = new CoursesLoader($this->pdo);
+        $ideasLoader = new IdeasLoader($this->pdo);
 
-        return $coursesLoader->getCourses();
-    }
-
-    public function getMeetingsLoader()
-    {
-        $meetingsLoader = new MeetingsLoader($this->pdo);
-
-        return $meetingsLoader->getMeetings();
+        return $ideasLoader->getIdeas();
     }
 
     public function insertIdea($array)
@@ -50,7 +43,7 @@ class PdoContainer
 
         $statement = $this->pdo->prepare("INSERT INTO ideas(author, idea_type, title, description, votes) VALUES ('Meri', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}',0)");
 
-        echo 'Success';
+        echo "Success";
         return $statement->execute();
     }
 
