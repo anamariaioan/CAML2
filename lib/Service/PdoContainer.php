@@ -77,7 +77,14 @@ class PdoContainer
         $statement = $this->pdo->prepare("UPDATE votes SET votes_count = votes_count + 1 WHERE id_idea = {$idIdea}");
 
         return $statement->execute();
+    }
 
+
+    public function getUsernameLogin()
+    {
+        $new_user = new LoginUsers($this->pdo);
+
+        return $new_user->getuser();
     }
 
 }
