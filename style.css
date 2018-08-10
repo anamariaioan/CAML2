@@ -41,7 +41,8 @@ Header Styling
 }
 
 .body {
-    padding-top: 5%!important;
+    padding-top: 3%!important;
+    padding-bottom: 3%;!important;
     max-width: 1000px;
     margin: auto;
     max-width: 1400px;
@@ -219,4 +220,17 @@ span.tags
 
 .login_button {
     margin-top: 10%;
+}
+
+/******************************
+Home Styling
+*******************************/
+
+.left-inform {
+    text-align: start!important;
+    font-weight: bold;
+}
+
+.right-inform {
+    text-align: end!important;
 }
