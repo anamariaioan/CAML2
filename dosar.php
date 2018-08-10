@@ -17,3 +17,7 @@ require_once __DIR__ .'/lib/Service/PdoContainer.php';
 require_once __DIR__.'/lib/Service/IdeasLoader.php';
 require_once __DIR__ . '/idea-saved.php';
 require_once __DIR__ . '/header-myaccount.html';
+require_once __DIR__.'/lib/Model/Rating.php';
+require_once __DIR__.'/lib/Service/RatingLoader.php';
+require_once __DIR__. '/lib/Model/Courses.php';
+require_once __DIR__. '/lib/Service/CoursesLoader.php';

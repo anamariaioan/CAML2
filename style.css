@@ -220,3 +220,7 @@ span.tags
 .login_button{
     margin-top: 10%;
 }
+
+#uploadimg{
+    float: left;
+}
