@@ -1,9 +1,7 @@
 <?php
-
+require_once 'header-myaccount.php';
 require __DIR__ . "/dosar.php";
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 ?>
 
 <!DOCTYPE html>

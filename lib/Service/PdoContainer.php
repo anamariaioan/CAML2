@@ -8,7 +8,6 @@
 
 namespace Service;
 
-use PDO;
 
 class PdoContainer
 {
@@ -17,13 +16,13 @@ class PdoContainer
     public function __construct(array $configuration)
     {
         if ($this->pdo === null) {
-            $this->pdo = new PDO(
+            $this->pdo = new \PDO(
                 $configuration['db_dsn'],
                 $configuration['db_user'],
                 $configuration['db_pass']
             );
 
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
 
     }
