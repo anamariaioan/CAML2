@@ -43,6 +43,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="profile.php">Profile</a>
+                <a class="dropdown-item" href="#">Notifications</a>
                 <a class="dropdown-item" href="new-ideas.php">Ideas</a>
                 <a class="dropdown-item" href="#">Log out</a>
             </div>
