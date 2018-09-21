@@ -11,17 +11,39 @@ namespace Model;
 
 class Notification
 {
-    public static const VOTE = "Your idea %s just got a vote. It has %s votes in total. GG!";
+    public const VOTE = "Your idea %s just got a vote. It has %s votes in total. GG!";
 
-    public static const NEXT_MEETING = "Up next: %s Meeting.";
+    public const NEXT_MEETING = "Up next: %s Meeting.";
 
-    public static const NEXT_COURSE = "Up next: %s Course.";
+    public const NEXT_COURSE = "Up next: %s Course.";
+
+    public const STATUS_ACTIVE = 1;
+
+    public const STATUS_INACTIVE = 0;
+
+    private $id;
 
     private $constNotification;
 
-    private $idNotification;
+    private $valueNotification;
+
+    private $valueNotification2;
+
+    private $eventType;
+
+    private $idEvent;
 
     private $idUser;
+
+    private $status;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
      * @return string
@@ -42,17 +64,33 @@ class Notification
     /**
      * @return int
      */
-    public function getIdNotification()
+    public function getValueNotification()
     {
-        return $this->idNotification;
+        return $this->valueNotification;
     }
 
     /**
-     * @param int $idNotification
+     * @param int $valueNotification
      */
-    public function setIdNotification($idNotification)
+    public function setValueNotification($valueNotification)
     {
-        $this->idNotification = $idNotification;
+        $this->valueNotification = $valueNotification;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getValueNotification2()
+    {
+        return $this->valueNotification2;
+    }
+
+    /**
+     * @param mixed $valueNotification2
+     */
+    public function setValueNotification2($valueNotification2): void
+    {
+        $this->valueNotification2 = $valueNotification2;
     }
 
     /**
@@ -71,7 +109,52 @@ class Notification
         $this->idUser = $idUser;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEventType()
+    {
+        return $this->eventType;
+    }
 
+    /**
+     * @param mixed $eventType
+     */
+    public function setEventType($eventType): void
+    {
+        $this->eventType = $eventType;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getIdEvent()
+    {
+        return $this->idEvent;
+    }
+
+    /**
+     * @param mixed $idEvent
+     */
+    public function setIdEvent($idEvent): void
+    {
+        $this->idEvent = $idEvent;
+    }
+
+    /**
+     * @return int
+     */
+    public function getStatus(): int
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param int $status
+     */
+    public function setStatus(int $status): void
+    {
+        $this->status = $status;
+    }
 
 }

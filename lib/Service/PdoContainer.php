@@ -9,6 +9,8 @@
 namespace Service;
 
 
+use Model\Notification;
+
 class PdoContainer
 {
     private $pdo;
@@ -85,8 +87,28 @@ class PdoContainer
         return $statement->execute();
     }
 
-    public function addNotificationForVotes()
+    public function getIdeaNameById($idIdea)
     {
+        $statement = $this->pdo->query("SELECT title FROM ideas WHERE id = {$idIdea}");
+
+        return $statement->fetch();
+    }
+
+    public function addNotificationForVotes($idIdea)
+    {
+        $constNotification = Notification::VOTE;
+
+        $user_id = 1;
+
+        $valueNotification = $this->getIdeaNameById($idIdea);
+
+        $valueNotification2 = $this->getVotesForIdea($idIdea);
+
+        $status = Notification::STATUS_ACTIVE;
+
+        $statement = $this->pdo->prepare("INSERT INTO notification_user(const_notification, value_notification, value_notification2, id_user, event_type, id_event, status) VALUES ('{$constNotification}', '{$valueNotification['title']}', '{$valueNotification2}', '{$user_id}', '3', '{$idIdea}', '{$status}') ");
+
+        return $statement->execute();
 
     }
 

@@ -21,6 +21,7 @@ require __DIR__ . "/dosar.php";
         $pdo = new PdoContainer($configuration);
         $idIdea = $_GET["id"];
         $pdo->incrementVotes($idIdea);
+        $pdo->addNotificationForVotes($idIdea);
 
         ?>
 
