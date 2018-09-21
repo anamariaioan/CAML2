@@ -41,7 +41,7 @@ class PdoContainer
         $ideaTitle = $array['ideaTitle'];
         $ideaDescription = $array['ideaDescription'];
 
-        $statement = $this->pdo->prepare("INSERT INTO ideas(author, idea_type, title, description) VALUES ('Meri', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}')");
+        $statement = $this->pdo->prepare("INSERT INTO ideas(user_id_author, idea_type, title, description) VALUES ('1', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}')");
 
         return $statement->execute();
     }
@@ -68,7 +68,8 @@ class PdoContainer
 
         return $new_user->getuser();
     }
-  public function getVotesForIdea($idIdea)
+
+    public function getVotesForIdea($idIdea)
     {
         $statement = $this->pdo->query("SELECT votes_count FROM votes WHERE id_idea = {$idIdea}");
 
@@ -82,6 +83,11 @@ class PdoContainer
         $statement = $this->pdo->prepare("UPDATE votes SET votes_count = votes_count + 1 WHERE id_idea = {$idIdea}");
 
         return $statement->execute();
+    }
+
+    public function addNotificationForVotes()
+    {
+
     }
 
     public function addrating()
