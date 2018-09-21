@@ -43,10 +43,47 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="profile.php">Profile</a>
-                <a class="dropdown-item" href="#">Notifications</a>
+                <a class="dropdown-item btn" data-toggle="modal" data-target="#ModalNotifications">Notifications</a>
                 <a class="dropdown-item" href="new-ideas.php">Ideas</a>
                 <a class="dropdown-item" href="#">Log out</a>
             </div>
+        </div>
+    </div>
+</div>
+<!--Modal Notifications-->
+<div class="modal fade" id="ModalNotifications">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Notifications</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="col-md-10">Notification</th>
+                        <th scope="col" class="col-md-2">Acknowledged</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Hardcoded Notification o.O</td>
+                        <td class="text-center">X</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
         </div>
     </div>
 </div>
