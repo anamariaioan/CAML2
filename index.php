@@ -83,6 +83,6 @@ $ideas = $container->getIdeasLoader();
             </div>
         </div>
     </div>
-
+<div class="footer"><?php include('Footer.html');?></div>
 </body>
 </html>
