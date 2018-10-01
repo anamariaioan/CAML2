@@ -14,7 +14,15 @@
 
     <link rel="icon" href="imgs/caml-logo.png">
     <title>CAML</title>
+    <?php
 
+    require __DIR__ . "/dosar.php";
+
+    use Service\PdoContainer;
+
+    $container = new PdoContainer($configuration);
+    $notifications = $container->getNotificationsLoader($idUser = 1);
+    ?>
 </head>
 <body>
 
@@ -71,10 +79,12 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($notifications as $notification): ?>
                     <tr>
-                        <td>Hardcoded Notification o.O</td>
-                        <td class="text-center">X</td>
+                        <td><?php echo sprintf($notification["const_notification"], $notification["value_notification"], $notification["value_notification2"]); ?></td>
+                        <td class="text-center"><button type="button" class="btn btn-success">Y</button></td>
                     </tr>
+                    <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

@@ -9,10 +9,12 @@ require __DIR__ . "/dosar.php";
 <body class="body">
 
 <?php
+
 use Service\PdoContainer;
 
 $container = new PdoContainer($configuration);
 $ideas = $container->getIdeasLoader();
+
 ?>
 
 <!--body-->

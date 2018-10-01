@@ -7,8 +7,8 @@
  */
 
 namespace Service;
-use PDO;
 
+use PDO;
 
 class LoginUsers
 {

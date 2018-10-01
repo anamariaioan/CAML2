@@ -11,7 +11,7 @@ namespace Model;
 
 class Notification
 {
-    public const VOTE = "Your idea %s just got a vote. It has %s votes in total. GG!";
+    public const VOTE = "Your idea %s just got a vote. It has %d votes in total. GG!";
 
     public const NEXT_MEETING = "Up next: %s Meeting.";
 

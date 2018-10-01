@@ -8,7 +8,6 @@
 
 namespace Service;
 
-
 use Model\Notification;
 
 class PdoContainer
@@ -34,6 +33,13 @@ class PdoContainer
         $ideasLoader = new IdeasLoader($this->pdo);
 
         return $ideasLoader->getIdeas();
+    }
+
+    public function getNotificationsLoader($idUser)
+    {
+        $notificationsLoader = new NotificationsLoader($this->pdo);
+
+        return $notificationsLoader->getNotifications($idUser);
     }
 
 
@@ -109,14 +115,11 @@ class PdoContainer
         $statement = $this->pdo->prepare("INSERT INTO notification_user(const_notification, value_notification, value_notification2, id_user, event_type, id_event, status) VALUES ('{$constNotification}', '{$valueNotification['title']}', '{$valueNotification2}', '{$user_id}', '3', '{$idIdea}', '{$status}') ");
 
         return $statement->execute();
-
     }
 
-    public function addrating()
-    {
 
-
-
-    }
+//    public function addrating()
+//    {
+//    }
 
 }
