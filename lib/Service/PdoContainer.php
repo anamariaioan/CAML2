@@ -25,7 +25,6 @@ class PdoContainer
 
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
-
     }
 
     public function getIdeasLoader()
@@ -42,7 +41,6 @@ class PdoContainer
         return $notificationsLoader->getNotifications($idUser);
     }
 
-
     public function insertIdea($array)
     {
         $ideaType = $array['ideaType'];
@@ -56,7 +54,7 @@ class PdoContainer
 
     public function selectIdeaId()
     {
-        $statement  = $this->pdo->query("SELECT id FROM ideas ORDER BY id DESC LIMIT 1");
+        $statement = $this->pdo->query("SELECT id FROM ideas ORDER BY id DESC LIMIT 1");
 
         return $statement->fetch();
     }
@@ -117,6 +115,12 @@ class PdoContainer
         return $statement->execute();
     }
 
+    public function setStatusInactiveOnNotifications()
+    {
+        $statement = $this->pdo->prepare("UPDATE notification_user SET status = 0 WHERE status = 1");
+
+        return $statement->execute();
+    }
 
 //    public function addrating()
 //    {
