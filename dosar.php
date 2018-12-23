@@ -9,8 +9,8 @@
 require __DIR__.'/vendor/autoload.php';
 
 $configuration = [
-    'db_dsn'  => 'mysql:host=gen-centos722588-all-dev.newton.c.emag.network;dbname=CAML',
-    'db_user' => 'meri',
+    'db_dsn'  => 'mysql:host=localhost;dbname=CAML',
+    'db_user' => 'root',
     'db_pass' => '0000'
 ];
 
