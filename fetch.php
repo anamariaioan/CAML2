@@ -28,7 +28,7 @@ if ($count == 0) {
 
 $data = [
     'notifications' => $output,
-    'unseen_notifications' => $count
+    'unseen_notifications' => $count == 0 ? '<span class="fas fa-bell"></span>' : $count
 ];
 
 echo json_encode($data);

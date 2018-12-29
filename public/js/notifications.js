@@ -39,5 +39,5 @@ $(document).ready(function () {
 
         load_unseen_notification();
 
-    }, 100000);
+    }, 100000000);
 });

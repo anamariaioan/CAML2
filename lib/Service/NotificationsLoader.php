@@ -22,10 +22,10 @@ class NotificationsLoader
 
     public function getNotifications($idUser)
     {
-        $statement = $this->pdo->prepare("SELECT * FROM notification_user WHERE id_user = {$idUser} AND status = 1");
-        $statement->execute();
+        $statement = $this->pdo->prepare("SELECT * FROM notification_user WHERE id_user = :id_user AND status = 1");
+        $statement->execute(['id_user' => $idUser]);
 
-        $notificationsArray = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $notificationsArray = $statement->fetchAll(\PDO::FETCH_ASSOC);
 
         return $notificationsArray;
     }

@@ -47,9 +47,13 @@ class PdoContainer
         $ideaTitle = $array['ideaTitle'];
         $ideaDescription = $array['ideaDescription'];
 
-        $statement = $this->pdo->prepare("INSERT INTO ideas(user_id_author, idea_type, title, description) VALUES ('1', '{$ideaType}' , '{$ideaTitle}' , '{$ideaDescription}')");
+        $statement = $this->pdo->prepare("INSERT INTO ideas(user_id_author, idea_type, title, description) VALUES ('1', :idea_type , :idea_title , :idea_description)");
 
-        return $statement->execute();
+        $statement->bindParam(':idea_type', $ideaType);
+        $statement->bindParam(':idea_title', $ideaTitle);
+        $statement->bindParam(':idea_description', $ideaDescription);
+
+        $statement->execute();
     }
 
     public function selectIdeaId()
@@ -63,9 +67,9 @@ class PdoContainer
     {
         $ideaId = $ideaIdObj['id'];
 
-        $statement = $this->pdo->prepare("INSERT INTO votes(id_idea, votes_count) VALUES ('{$ideaId}', 0)");
+        $statement = $this->pdo->prepare("INSERT INTO votes(id_idea, votes_count) VALUES (:idea_id, 0)");
 
-        return $statement->execute();
+        $statement->execute(['id_idea' => $ideaId]);
     }
 
     public function getUsernameLogin()
@@ -77,7 +81,9 @@ class PdoContainer
 
     public function getVotesForIdea($idIdea)
     {
-        $statement = $this->pdo->query("SELECT votes_count FROM votes WHERE id_idea = {$idIdea}");
+        $statement = $this->pdo->prepare("SELECT votes_count FROM votes WHERE id_idea=:id_idea");
+
+        $statement->execute(['id_idea' => $idIdea]);
 
         $votesCount = $statement->fetch();
 
@@ -86,14 +92,18 @@ class PdoContainer
 
     public function incrementVotes($idIdea)
     {
-        $statement = $this->pdo->prepare("UPDATE votes SET votes_count = votes_count + 1 WHERE id_idea = {$idIdea}");
+        $statement = $this->pdo->prepare("UPDATE votes SET votes_count = votes_count + 1 WHERE id_idea = :id_idea");
 
-        return $statement->execute();
+        $statement->bindParam(':id_idea', $idIdea);
+
+        $statement->execute();
     }
 
     public function getIdeaNameById($idIdea)
     {
-        $statement = $this->pdo->query("SELECT title FROM ideas WHERE id = {$idIdea}");
+        $statement = $this->pdo->prepare("SELECT title FROM ideas WHERE id = :id_idea");
+
+        $statement->execute(['id_idea' => $idIdea]);
 
         return $statement->fetch();
     }
@@ -102,17 +112,33 @@ class PdoContainer
     {
         $constNotification = Notification::VOTE;
 
-        $user_id = 1;
+        $userId = 1;
 
         $valueNotification = $this->getIdeaNameById($idIdea);
 
+        $valueNotification = $valueNotification['title'];
+
         $valueNotification2 = $this->getVotesForIdea($idIdea);
+
+        $eventType = 3;
 
         $status = Notification::STATUS_ACTIVE;
 
-        $statement = $this->pdo->prepare("INSERT INTO notification_user(const_notification, value_notification, value_notification2, id_user, event_type, id_event, status) VALUES ('{$constNotification}', '{$valueNotification['title']}', '{$valueNotification2}', '{$user_id}', '3', '{$idIdea}', '{$status}') ");
+        $statement = $this->pdo->prepare(
+            "INSERT INTO notification_user
+                        (const_notification, value_notification, value_notification2, id_user, event_type, id_event, status) 
+                      VALUES 
+                        (:const_notification , :value_notification , :value_notification_2 , :user_id , :event_type , :event_id , :status)");
 
-        return $statement->execute();
+        $statement->bindParam(':const_notification', $constNotification);
+        $statement->bindParam(':value_notification', $valueNotification);
+        $statement->bindParam(':value_notification_2', $valueNotification2);
+        $statement->bindParam(':user_id', $userId);
+        $statement->bindParam(':event_type', $eventType);
+        $statement->bindParam(':event_id', $idIdea);
+        $statement->bindParam(':status', $status);
+
+        $statement->execute();
     }
 
     public function setStatusInactiveOnNotifications()
@@ -121,9 +147,4 @@ class PdoContainer
 
         return $statement->execute();
     }
-
-//    public function addrating()
-//    {
-//    }
-
 }

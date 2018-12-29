@@ -89,7 +89,7 @@
     <div class="col-md-2">
         <a href="#" id="btnNotifications" class="btn btn-info btn-lg sticky-bottom" data-toggle="modal"
            data-target="#ModalNotifications">
-            <span class="fas fa-bell"></span>
+
         </a>
         &nbsp
     </div>
